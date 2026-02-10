@@ -23,10 +23,11 @@ __export(index_config_exports, {
 });
 module.exports = __toCommonJS(index_config_exports);
 var index_config_default = {
-  ali: {
-    token: "",
-    token280: "token280"
-  },
+  // 阿里目前用不了，暂时注释
+  // ali: {
+  //     token: '',
+  //     token280: 'token280',
+  // },
   quark: {
     cookie: ""
   },
@@ -38,10 +39,13 @@ var index_config_default = {
   y115: {
     cookie: ""
   },
+  baidu: {
+    cookie: ""
+  },
   muou: {
     url: ""
   },
-  wogg: {
+  wanou: {
     url: ""
   },
   leijing: {
@@ -49,9 +53,15 @@ var index_config_default = {
   },
   tgsou: {
     tgPic: false,
-    count: 0,
+    count: "",
     url: "",
     channelUsername: ""
+  },
+  pansou: {
+    url: "",
+    channels: "",
+    plugins: "",
+    cloudTypes: ""
   },
   tgchannel: {},
   sites: {
@@ -60,81 +70,22 @@ var index_config_default = {
   pans: {
     list: []
   },
-   danmu: {
+  danmu: {
     urls: [
-           { address: "https://logdanmu.dpdns.org", name: "默认1" },
-           { address: "https://fjj0417.dpdns.org/87654321", name: "默认2" }, 
-           { address: "https://dm.stardm.us.kg:443/87654321", name: "默认3" }, 
-           { address: "https://danmu.14812910.xyz/87654321", name: "默认4" }, 
-           { address: "https://313236.xyz/87654321", name: "默认5" }
-          ],
-    autoPush: true
+      { address: "https://fjj0417.dpdns.org", name: "API-1" },
+      { address: "https://313236.xyz", name: "API-2" }
+    ],
+    autoPush: true,
+    debug: false
+    // 弹幕匹配调试信息开关
   },
- t4: {list: [
-    {name: "🔞今天你打飞机了吗？",
-      address: "https://19q.cc/api.php/provide/vod"},
-    {name: "✈️关注TG频道@stymei",
-      address: "http://zhangqun1818.serv00.net:6628/?spider=独播库"},
-    {name: "👖裤佬丨电视丨直播",
-      address: "http://zhangqun1818.serv00.net/zh/2242.php"},
-    {name: "👖裤佬丨瓜子丨影视",
-      address: "https://catbox.n13.club/ai/瓜子影视.php"},
-    {name: "👖裤佬丨苹果丨影视",
-      address: "http://zhangqun1818.serv00.net:6628/?spider=apple"},
-    {name: "👖裤佬丨小鸭丨影视",
-      address: "http://zhangqun1818.serv00.net:5052/?sp=小鸭子看看"},
-    {name: "👖裤佬丨爱瓜丨影视",
-      address: "http://zhangqun1818.serv00.net:5052/?sp=爱瓜影视"},
-    {name: "👖裤佬丨荐片丨影视",
-      address: "http://zhangqun1818.serv00.net:6628/?spider=荐片"},
-    {name: "👖裤佬丨人人丨影视",
-      address: "http://zhangqun1818.serv00.net:6628/?spider=人人影视"},
-    {name: "👖裤佬丨凡客丨影视",
-      address: "http://zhangqun1818.serv00.net:6628/?spider=凡客tv"},
-    {name: "👖裤佬丨永乐丨影视",
-      address: "http://zhangqun1818.serv00.net:6628/?spider=永乐视频"},
-    {name: "👖裤佬丨鬼片丨影视",
-      address: "http://zhangqun1818.serv00.net:6628/?spider=鬼片之家"},
-    {name: "👖裤佬丨UVod丨影视",
-      address: "http://zhangqun1818.serv00.net:5052/?sp=UVod"},
-    {name: "👖裤佬丨哇哇丨影视",
-      address: "http://zhangqun1818.serv00.net:5052/?sp=哇哇"},
-    {name: "👖裤佬丨麻雀丨影视",
-      address: "http://zhangqun1818.serv00.net:5052/?sp=麻雀视频"},
-    {name: "👖裤佬丨努努丨影视",
-      address: "http://zhangqun1818.serv00.net:5052/?sp=努努影院"},
-    {name: "👖裤佬丨红果丨短剧",
-      address: "https://catbox.n13.club/ai/红果短剧.php"},
-    {name: "👖裤佬丨七猫丨短剧",
-      address: "http://zhangqun1818.serv00.net:6628/?spider=七猫短剧"},
-    {name: "👖裤佬丨西饭丨短剧",
-      address: "http://zhangqun1818.serv00.net:6628/?spider=西饭短剧"},
-    {name: "👖裤佬丨河马丨短剧",
-      address: "http://zhangqun1818.serv00.net:5052/?sp=河马短剧"},
-    {name: "👖裤佬丨旺旺丨短剧",
-      address: "http://zhangqun1818.serv00.net/ww.php"},
-    {name: "👖裤佬丨Emby丨嗅探",
-      address: "http://zhangqun1818.serv00.net:6628/?spider=emby"},
-    {name: "👖裤佬丨凤凰丨FM",
-      address: "http://zhangqun1818.serv00.net:6628/?spider=凤凰fm"},
-    {name: "👖裤佬丨兔小贝丨少儿",
-      address: "http://zhangqun1818.serv00.net:6628/?spider=兔小贝"}
-]},
-  cms: {list: [
-{name: "👖裤佬丨极速丨采集",
-address: "https://jszyapi.com/api.php/provide/vod"},
-{name: "👖裤佬丨暴风丨采集",
-address: "http://by.bfzyapi.com/api.php/provide/vod"},
-{name: "👖裤佬丨iQiYi丨采集",
-address: "https://iqiyizyapi.com/api.php/provide/vod"},
-{name: "👖裤佬丨无水印丨采集",
-address: "https://api.wsyzy.net/api.php/provide/vod"},
-{name: "👖裤佬丨爬虫丨采集",
-address: "https://dy.7772888.xyz/api.php/tvbox"},
-{name: "👖裤佬丨茅台丨采集",
-address: "https://caiji.maotaizy.cc/api.php/provide/vod"}
-]},
-live2vod: {
+  t4: {
+    list: []
+  },
+  cms: {
+    list: []
+  },
+  live2vod: {
     sources: [
       { name: "冰茶", url: "https://188766.xyz/itv", img: "" },
       { name: "网络", url: "https://m.iill.top/Live.m3u", img: "" },
