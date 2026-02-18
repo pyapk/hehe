@@ -75,8 +75,6 @@ var index_config_default = {
       address: "http://zhangqun1818.serv00.net:6628/?spider=独播库"},
     {name: "👖裤佬丨电视丨直播",
       address: "http://zhangqun1818.serv00.net/zh/2242.php"},
-    {name: "👖裤佬丨瓜子丨影视",
-      address: "https://newtv.ggff.net/guazi?token=MRdKOtZ4"},
     {name: "👖裤佬丨小鸭丨影视",
       address: "http://zhangqun1818.serv00.net:5052/?sp=小鸭子看看"},
     {name: "👖裤佬丨爱瓜丨影视",
